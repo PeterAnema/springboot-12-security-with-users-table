@@ -5,7 +5,7 @@ drop table if exists users;
 create table users(
     username varchar(50) not null,
     password varchar(255) not null,
-    enabled int not null default 1,
+    enabled boolean not null default 1,
     primary key (username)
 );
 
